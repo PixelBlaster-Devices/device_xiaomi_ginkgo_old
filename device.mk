@@ -163,6 +163,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0.vendor \
     android.hardware.drm@1.3-service.clearkey
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.ginkgo
